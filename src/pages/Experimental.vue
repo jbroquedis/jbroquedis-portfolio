@@ -596,3 +596,15 @@ export default {
   
   .left-panel {
     height: 40vh;
+  }
+  
+  .right-panel {
+    width: 100% !important;
+    height: 60vh;
+  }
+  
+  .divider {
+    display: none;
+  }
+}
+</style>

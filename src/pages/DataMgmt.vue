@@ -71,7 +71,7 @@
     <!-- Empty state -->
     <div v-else class="empty-state">
       <div class="empty-content">
-        <p class="empty-hint">← select a project below</p>
+        <p class="empty-hint">{{ emptyHint }}</p>
       </div>
     </div>
   </div>
@@ -90,11 +90,13 @@ import {
 } from '../utils/imageDetection.js'
 import { getProjectMetadata } from '../utils/projectMetadata.js'
 import ProjectDataBar from '../components/ProjectDataBar.vue'
+import { useLanguage } from '../composables/useLanguage.js'
 
 export default {
   name: 'DataMgmt',
   components: { ProjectDataBar },
   setup() {
+    const { t } = useLanguage()
     const rightPanelWidth = ref(300)
     const windowWidth = ref(window.innerWidth)
     const selectedProject = ref(null)
@@ -279,7 +281,8 @@ export default {
       galleryRef,
       handleGalleryScroll,
       startResize,
-      openLightbox
+      openLightbox,
+      emptyHint: computed(() => t('empty_hint'))
     }
   }
 }
