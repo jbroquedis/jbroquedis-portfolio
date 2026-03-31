@@ -1,0 +1,8 @@
+{
+  "name": "IsoGen Parametric Tool",
+  "year": 2024,
+  "issuedFor": "Computational Design Course",
+  "techStack": "Grasshopper, Python, C#, Rhino3D",
+  "collaboration": "Individual Work",
+  "textDescription": "An advanced parametric design tool for generating isometric architectural forms through algorithmic processes. The tool uses mathematical models to create complex geometric relationships while maintaining structural integrity and aesthetic coherence."
+}
