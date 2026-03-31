@@ -29,3 +29,10 @@ public/projects/computational-design/computational-design-project-7/gallery/TOPO
 *.njsproj
 *.sln
 *.sw?
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
