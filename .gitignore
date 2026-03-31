@@ -12,8 +12,12 @@ dist
 dist-ssr
 *.local
 
-# Large video files (host externally)
+# Large media files (host externally - exceed Cloudflare 25 MiB limit)
 *.mp4
+public/projects/experimental/experimental-project-2/gallery/9b4bb56b8f51.png
+public/projects/experimental/experimental-project-2/gallery/afb22c9a5c6b.png
+public/projects/computational-design/computational-design-project-7/app-embedding/FINAL CHAIR WIREFRAME.gif
+public/projects/computational-design/computational-design-project-7/gallery/TOPO OPT 1.gif
 
 # Editor directories and files
 .vscode/*
